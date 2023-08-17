@@ -35,4 +35,7 @@ call plug#begin()
 
     " Coc LSP
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+    " Emmet
+    Plug 'mattn/emmet-vim'
 call plug#end()
