@@ -51,3 +51,6 @@ hi cursorline cterm=none term=none
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
 highlight CursorLine guibg=#303000 ctermbg=234
+
+" Pretiter
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')

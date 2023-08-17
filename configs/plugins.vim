@@ -32,4 +32,7 @@ call plug#begin()
 
     " Find and replace text
     Plug 'brooth/far.vim'
+
+    " Coc LSP
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()

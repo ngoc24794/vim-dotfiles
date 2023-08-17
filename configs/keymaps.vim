@@ -66,3 +66,6 @@ nnoremap <silent> <leader>fr  :Farr<cr>
 vnoremap <silent> <leader>fr  :Farr<cr>
 
 nnoremap <silent> <leader>gd  :GitGutterDiffOrig<cr>
+
+" Prettier format code
+nnoremap gp :silent %!prettier --stdin-filepath %<CR>
