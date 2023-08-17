@@ -44,3 +44,10 @@ let &t_ZR="\e[23m"
 " Color Scheme
 colorscheme kanagawa
 autocmd BufEnter * lcd %:p:h
+
+" Highlight cursor line
+set cursorline
+hi cursorline cterm=none term=none
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
+highlight CursorLine guibg=#303000 ctermbg=234
