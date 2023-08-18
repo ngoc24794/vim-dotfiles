@@ -38,4 +38,7 @@ call plug#begin()
 
     " Emmet
     Plug 'mattn/emmet-vim'
+
+    " Read and write as sudo
+    Plug 'lambdalisue/suda.vim'
 call plug#end()
