@@ -54,3 +54,18 @@ highlight CursorLine guibg=#303000 ctermbg=234
 
 " Pretiter
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+
+" May need for Vim (not Neovim) since coc.nvim calculates byte offset by count
+" utf-8 byte sequence
+set encoding=utf-8
+" Some servers have issues with backup files, see #649
+set nobackup
+set nowritebackup
+
+" Having longer updatetime (default is 4000 ms = 4s) leads to noticeable
+" delays and poor user experience
+set updatetime=300
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved
+set signcolumn=yes
